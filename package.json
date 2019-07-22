@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-guide",
+  "version": "0.0.1",
+  "description": "A Guide to Node JS Programming. ",
+  "main": "firstServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aashishyadav/NodeJS-Guide.git"
+  },
+  "author": "Ashish Yadav (ashishwillrock@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aashishyadav/NodeJS-Guide/issues"
+  },
+  "homepage": "https://github.com/Aashishyadav/NodeJS-Guide#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
