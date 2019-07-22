@@ -22,10 +22,11 @@ function compute(req, res) {
         }
     });
 }
-/* for using compute function
-module.exports=compute; */
+  // for taking compute function in createServer.js from compute.js // 
+   module.exports=compute; 
 
+// for Express Server . Comment below lines for above code
  module.exports = {
     computeSum: compute,
     addNumbers: add 
-}; 
+   };  
