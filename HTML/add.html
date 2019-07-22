@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test website</title>
+        <style type="text/css">
+            html, body, .container {
+                height:100%; 
+                width: 100%; 
+                margin: 0;
+                padding: 0;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            .container {
+                display: flex; 
+                justify-content: center; 
+                align-items: center
+            }
+
+        </style>
+    
+    </head>
+    <body>
+        <div class="container">
+     <center>      <form action="/add/compute" method="POST" style="width: 700px;">
+                <div>
+                    <label for="first_no">Enter First Number :</label> 
+                    <input type="text" id="first_no" name="number1" placeholder="Enter First Number"> </div>
+                <div>   <label for="second_no">Enter Second Number :</label>
+                    <input type="text" id="second_no" name="number2" placeholder="Enter Second Number">
+                </div>
+                <div>
+                <div>    <center><button>  ADD   </button></center>   </div>
+                </div>
+            </form> </center> 
+        </div>
+    </body>
+</html>
