@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        title Sum Of Numbers
+        link(rel="stylesheet" href="/css/bootstrap.min.css")
+    body 
+        center
+            if sum
+                div(class="container")  Response is : #{sum}
+        form(action="/add/compute" method="POST" style="width=400px")
+            center      
+                    div
+                        input(type="text" name="number1" placeholder="Enter Number 1")
+                    div
+                        input(type="text" name="number2" placeholder="Enter Number 2")
+                    div
+                        button(type="submit") ADD
