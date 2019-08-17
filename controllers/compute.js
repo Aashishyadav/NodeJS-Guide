@@ -33,10 +33,18 @@ function compute(req, res) {
     const number1 = parseFloat(req.body.number1); // req.body = bodyObj
     const number2 = parseFloat(req.body.number2);
     const result = add(number1, number2);
+    // adding previous oldResult (add_result) with the help of cookie
+
+  //  res.cookie('add_result', result.toString()); commented this because using req.session.add_result= result;
+
    // res.end(result.toString());  // because using {sum} in sum.html
-  
+
+      req.session.add_result= result;
+
    // for rendering the pug template
-   res.render('sum.pug', {sum:result});
+   res.render('sum.pug', {
+               sum:result
+            });
 
     /* // below codes under comment because we used rendering of pug
      fs.readFile(__dirname + '/../HTML/sum.html', function (err, htmlStr){
